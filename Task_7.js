@@ -8,9 +8,12 @@ function standardDeviation(arr) {
     sum += arr[i];
     mean = sum / arr.length;
   }
+
+  // get sum of mean of numbers based on mathematical formula for standard deviation
   for (let i = 0; i < arr.length; i++) {
     sumOf += Math.pow(arr[i] - mean, 2);
   }
 
+  // return square root of sumOf divided by total numbers
   return Math.sqrt(sumOf / (arr.length - 1));
 }

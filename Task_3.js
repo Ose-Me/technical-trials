@@ -1,18 +1,3 @@
-// import isPrime from "./Task_2";
-function isPrime(num) {
-  let result = true;
-
-  if (num === 1) {
-    result = false;
-  }
-  for (var i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
-      result = false;
-    }
-  }
-  return result;
-}
-
 function PrimeNumbers(arr) {
   // initialise result array
   let result = [];
@@ -27,4 +12,17 @@ function PrimeNumbers(arr) {
   return result;
 }
 
-console.log(PrimeNumbers([2, 3, 1, 7, 2]));
+// isPrime function from previous task;
+function isPrime(num) {
+  let result = true;
+
+  if (num === 1) {
+    result = false;
+  }
+  for (var i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      result = false;
+    }
+  }
+  return result;
+}
