@@ -9,7 +9,7 @@ function standardDeviation(arr) {
     mean = sum / arr.length;
   }
 
-  // get sum of mean of numbers based on mathematical formula for standard deviation
+  // get sum of mean of numbers raised to power of two
   for (let i = 0; i < arr.length; i++) {
     sumOf += Math.pow(arr[i] - mean, 2);
   }
